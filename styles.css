@@ -96,3 +96,15 @@ h1, h2 {
     gap: 0.5rem;
   }
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+footer a,
+footer a:visited,
+footer a:hover,
+footer a:active {
+  color: var(--heading);
+}
+

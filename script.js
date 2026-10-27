@@ -96,7 +96,7 @@ contactForm.addEventListener("submit", function (event) {
   }
 
   // show summary and clear fields
-  formMessage.textContent = "Thanks, " + name + ". Your message has been received.";
+  formMessage.textContent = "Form summary — Name: " + name + " | Message: " + message;
   nameInput.value = "";
   messageInput.value = "";
 });
