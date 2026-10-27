@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hugo Moral | CS Student</title>
+  <!-- external stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- HEADER: name and dark mode button -->
+  <header>
+    <h1>Hugo Moral</h1>
+    <p>CS student at New College of Florida. I like building small web apps and figuring out how things work.</p>
+    <button type="button" id="theme-button">Dark mode</button>
+  </header>
+
+  <!-- NAV: three links to sections -->
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- SECTION 1: About -->
+    <section id="about">
+      <h2>About</h2>
+      <p>I'm a commuter student working on front-end development this semester.</p>
+      <ul>
+        <li>Learning HTML, CSS, and JavaScript</li>
+        <li>Previously built Streamlit apps</li>
+        <li>Interested in software development</li>
+      </ul>
+    </section>
+
+    <!-- SECTION 2: Projects (list built by JavaScript) -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <img src="images/project.png" alt="Screenshot of a Streamlit project">
+      <div>
+        <label for="search-input">Search projects</label>
+        <input type="search" id="search-input" placeholder="Type to filter">
+        <div id="category-buttons"></div>
+        <ul id="project-list"></ul>
+        <p id="project-count"></p>
+      </div>
+    </section>
+
+    <!-- SECTION 3: Contact form -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <label for="name">Your name</label>
+        <input type="text" id="name" required>
+        <label for="message">Message</label>
+        <textarea id="message" rows="4" required></textarea>
+        <button type="submit">Send</button>
+      </form>
+      <p id="form-message"></p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><a href="https://github.com/hmoral26">My GitHub profile</a></p>
+  </footer>
+
+  <!-- external script, deferred -->
+  <script src="script.js" defer></script>
+</body>
+</html>

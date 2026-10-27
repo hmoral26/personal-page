@@ -1,0 +1,98 @@
+/* ===== CUSTOM PROPERTIES (light mode) ===== */
+:root {
+  --bg: #003087;
+  --text: #ffffff;
+  --accent: #FFBF3F;
+  --gold: #FFBF3F;
+  --panel: #ffffff;
+  --border: #FFBF3F;
+  --heading: #003087;
+  --panel-text: #1c1c1c;
+}
+
+/* ===== DARK MODE OVERRIDES ===== */
+body.dark-mode {
+  --bg: #001a4d;
+  --text: #f0f0f0;
+  --accent: #FFBF3F;
+  --panel: #0d2147;
+  --border: #FFBF3F;
+  --heading: #FFBF3F;
+  --panel-text: #f0f0f0;
+}
+
+/* ===== BOX MODEL ===== */
+* {
+  box-sizing: border-box;
+}
+
+/* ===== PAGE ===== */
+body {
+  font-family: system-ui, Arial, sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--bg);
+  margin: 0;
+  padding: 1rem;
+}
+
+/* ===== SECTIONS AND HEADER ===== */
+header, section, footer {
+  background-color: var(--panel);
+  border: 3px solid var(--gold);
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  color: var(--panel-text);
+}
+
+/* ===== FLEXBOX NAV ===== */
+nav ul {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  padding: 0;
+}
+
+/* ===== LINKS (override browser purple) ===== */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: var(--gold);
+  text-decoration: underline;
+}
+
+/* ===== HEADINGS ===== */
+h1, h2 {
+  color: var(--heading);
+}
+
+/* ===== GOLD BUTTON ===== */
+#theme-button {
+  margin-top: 0.5rem;
+  background-color: var(--gold);
+  color: #003087;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* ===== CATEGORY BUTTONS ===== */
+#category-buttons button {
+  background-color: var(--gold);
+  color: #003087;
+  border: none;
+  margin-right: 0.5rem;
+  padding: 0.3rem 0.7rem;
+  cursor: pointer;
+}
+
+/* ===== MEDIA QUERY (stacks nav on small screens) ===== */
+@media (max-width: 700px) {
+  nav ul {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
